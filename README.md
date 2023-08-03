@@ -144,7 +144,7 @@ General requirements. Please be aware that a set of requirements specific to eac
   ### Week 5: Final Challenge
   Final Challenge presentation week.
   
-  **Final Challenge:** PID Controller using ROS and compare with simulation.
+  **Mid-Term Challenge:** PID Controller using ROS and compare with simulation.
   
   **Requirements:** Requirements of Session 1 and Session 3.
 
