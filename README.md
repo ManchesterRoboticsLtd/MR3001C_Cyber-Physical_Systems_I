@@ -125,7 +125,7 @@ General requirements. Please be aware that a set of requirements specific to eac
 
 <br/><br/><br/>
   <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/TE3001B_Fundamentals_of_Robotics/blob/main/Misc/Logos/Hardware.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Hardware.png">
   <img alt="Shows Hardware required." width="650" align="center">
 </picture>
 <br/><br/>
