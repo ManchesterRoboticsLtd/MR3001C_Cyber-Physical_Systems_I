@@ -1,41 +1,38 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/TE3001B_Robotics_Foundation/blob/main/Misc/Logos/Logotipo%20Vertical%20Bco_Transparente.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/TE3001B_Robotics_Foundation/blob/main/Misc/Logos/Logotipo%20Vertical%20Azul%20transparente.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Logotipo%20Vertical%20Bco_Transparente.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Logotipo%20Vertical%20Azul%20transparente.png">
   <img alt="Shows ITESM logo in black or white." width="160" align="right">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/TE3001B_Robotics_Foundation/blob/main/Misc/Logos/MCR2_Logo_White.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/TE3001B_Robotics_Foundation/blob/main/Misc/Logos/MCR2_Logo_Black.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/MCR2_Logo_White.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/MCR2_Logo_Black.png">
   <img alt="Shows MCR2 logo in black or white." width="150" align="right">
 </picture>
 
-
 ---
-# Robotics Foundation Week 1: Introductory session.
+# MR3001C Cyber-Physical Systems I
 
-  ## Session 1
-  * In this session, we introduce the course given to the students from the "Socio Formador" Manchester Robotics Ltd.
-  * We also provide the requirements for this course like Ubuntu / VM's, ROS, etc.
-  * Troubleshooting, tips and trick on how to install Ubuntu and ROS are provided.
-  * A small intorduction to Ubuntu, how to use it? and some tips are presented. 
-  
-  ## Session 2
+  ## Session
+  * In this session, we introduce Cyber-Physical Systems Manchester Robotics Ltd.
+  * Who are we?
+  * Introduction to robotics.
+  * A small introduction to Ubuntu, how to use it? and some tips are presented.
+  * Troubleshooting, tips, and tricks on installing Ubuntu and ROS are provided.
   * In this session, we introduce the basic concepts of ROS, such as ROS Master, Topics, Nodes, Launch files, etc.
-  * The first activity involves the creation of a simple talker and listener nodes.
   * The activities and examples done during the class are located in the folder Activities.
 
   ## Mini Challenge
   * Mini Challenge Create a "signal_generator" and "process" nodes and plot the results.
-  * The mini challenge and further instructions for this session is located in the folder Challenge. 
+  * The mini challenge and further instructions for this session are located in the folder Challenge. 
 
   
-  Please note: This repository contains all the neccesary files and presentations given during this session and the instructions for each one of the activities of the session.
+  Please note: This repository contains all the necessary files and presentations given during this session and the instructions for each one of the activities of the session.
 
 ---
 
 ## YouTube Video
-  In this video, Rebeca shows us some of the key concepts of ROS. This video is for reference only, the activities shown are not required to be performed. Some concepts in this video will be seen in session 2.
+  In this video, Rebeca shows us some of the critical concepts of ROS. This video is for reference only. The activities shown are not required to be performed. Some concepts in this video will be seen in session 2.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=IF-k6KhhRkE
 " target="_blank"><p align="center"><img src="http://img.youtube.com/vi/IF-k6KhhRkE/0.jpg" 
@@ -46,7 +43,7 @@ alt="ROS Basics" width="300" border="10"/></p></a>
 ---
 
 ## Live recordings are stored in the following link
-https://drive.google.com/drive/folders/1zwf-i3HS0DGVfw6-EP8dxm5uoH7hNtVi?usp=sharing
+
 
 ---
 
