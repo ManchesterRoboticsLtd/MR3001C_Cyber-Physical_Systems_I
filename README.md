@@ -130,9 +130,9 @@ General requirements. Please be aware that a set of requirements specific to eac
   * Access to Hackerboard and an MCR2 DC motor.
     * In case you have no access to the Hackeboard, the hardware can be replaced with an Arduino Mega, an L298n Motor Driver, and a DC motor brushed with an encoder (More information MCR2_General_Information_Prerequisites).
 
-<br/><br/><br/>
+  <br/><br/><br/>
   <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/c3ace318-2d7a-41c2-af40-57a5559026b6">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Hardware.png">
   <img alt="Shows Hardware required." width="650" align="center">
 </picture>
 <br/><br/>
