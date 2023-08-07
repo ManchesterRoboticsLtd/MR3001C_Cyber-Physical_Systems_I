@@ -72,7 +72,7 @@ General requirements. Please be aware that a set of requirements specific to eac
  * Computer with access to Zoom
  * Ubuntu 18.04 or 20 
  * ROS Melodic /Noetic Installed (Full installation).
- * If Ubuntu 18.04 or 20 cannot be installed, MCR2 offers a Virtual Machine with ROS preinstalled (installation instructions in Week 1 Folder).
+ * If Ubuntu 18.04 or 22.04 cannot be installed, MCR2 offers a Virtual Machine with ROS preinstalled (installation instructions in Week 1 Folder).
 
 
 
