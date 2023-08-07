@@ -14,13 +14,13 @@
 # MR3001C Cyber-Physical Systems I
 
   ## Introduction
-* In this advanced-level engineering course, the student intends to solve a cyber-physical system challenge.
-* The course is divided 2 sections, carefully designed for the user to learn about the different aspects of ROS  from topics and messages to control and simulation of a real robot.
+* The student intends to solve a cyber-physical system challenge in this advanced-level engineering course.
+* The course is divided into 2 sections, carefully designed for the user to learn about the different aspects of ROS,  from topics and messages to control and simulation of a real robot.
 * The first part of this course, introduces the basic concepts and general knowledge of the ROS environment to the user.
-* The second part of the course is dedicated to the analysis and control of mobile robots on different environments. 
-* This course will be based on challenges to make the student aware of ROS basics and ROS communication with hardware.
-* This branch contains all the presentations, activities and files required for the “MR3001C: Cyber-Physical Systems I” course of the Tec de Monterrey.
-* This repository is organised by sessions, each subfolder contains all the neccesary files for each one of the activities of this course.
+* The second part of the course is dedicated to analyzing and controlling mobile robots in different environments. 
+* This course will be based on challenges to inform students of ROS basics and ROS communication with hardware.
+* This branch contains all the presentations, activities, and files required for the “MR3001C: Cyber-Physical Systems I” course of the Tec de Monterrey.
+* This repository is organised by sessions. Each subfolder contains all the necessary files for each one of the activities of this course.
    
 ## General Information
 * MCR2 Person in Charge: Dr Alexandru Stancu and Dr Mario Martinez
@@ -30,8 +30,8 @@
 
 
 ## Live Sessions (Recordings)
-
-
+  * Group 1:
+  * Group 2:
      
 ## General Requirements
 General requirements. Please be aware that a set of requirements specific to each session will be shown in each session subsection (Some items may be repeated).
@@ -47,14 +47,13 @@ General requirements. Please be aware that a set of requirements specific to eac
 ### Session 1: Introduction
   This session will introduce the teaching team and the basics of ROS.
   #### Topics:
- * Who we are? Introduction to MCR2.
- * Introduction to Robotics
- * Introduction to VM, Ubuntu
- * Introduction to ROS.
- * Overview of the ROS Environment.
- * Topics, Messages, ROS.
- * Example Talker and Listener.
- * Launch Files.
+ * Who are we? 
+ * Introduction to robotics.
+ * Introduction to VM/Ubuntu
+ * Introduction to ROS
+ * Overview of ROS Environment
+   * Topics, Messages
+   * Launch Files
 
   #### Activities
 
@@ -67,12 +66,16 @@ General requirements. Please be aware that a set of requirements specific to eac
   #### Mini-Challenges
 
   * ##### Mini-Challenge 1: ROS Nodes
-    Generate a node that send a signal to another node to process it.
-     
-  
+    Generate a node that sends a signal to another node to process it.
   
   **Requirements:** 
-  Computer with access to Zoom, Ubuntu 18.04 and ROS Melodic Installed (Full installation). In case Ubuntu 18.04 cannot be installed, MCR2 offers a Virtual Machine with ROS preinstalled (installation instructions in Week 1 Folder).
+ * Computer with access to Zoom
+ * Ubuntu 18.04 or 20 
+ * ROS Melodic /Noetic Installed (Full installation).
+ * If Ubuntu 18.04 or 20 cannot be installed, MCR2 offers a Virtual Machine with ROS preinstalled (installation instructions in Week 1 Folder).
+
+
+
 
 
 ### Session 2: ROS Practicalities
@@ -85,10 +88,10 @@ General requirements. Please be aware that a set of requirements specific to eac
 
   #### Activities
 
-   * ##### Activity 1: Parameters
+   * ##### Activity 3: Parameters
      Parametrise previous nodes.
 
-   * ##### Activity 2: Custom Messages
+   * ##### Activity 4: Custom Messages
      Create a custom message for the previous nodes.
 
   #### Mini-Challenges
@@ -100,18 +103,20 @@ General requirements. Please be aware that a set of requirements specific to eac
     Requirements of Session 1.
 
 
-### Session 3: ROS-Hardware Communication
-  This week will introduce hardware communication between ROS and the Hackerboard using ROSSerial.
-  #### Topics:
-  * Motor Control Theory
-  * ROS Serial
-  * Arduino
-  * ROS Serial/Arduino Communication.
 
+
+
+
+### Session 3: ROS-Hardware Communication
+  This week will introduce hardware communication between ROS and the Hackerboard/Arduino using ROS Serial.
+  #### Topics:
+  * ROS Serial
+  * Arduino / ESP32 / Hackerboard
+  * ROS Serial/Arduino Communication.
 
   #### Activities
 
-   * ##### Activity 1: ROS Serial Communication
+   * ##### Activity 5: ROS Serial Communication
      Rosserial communication with Arduino/ESP32.
 
   #### Mini-Challenges
@@ -120,29 +125,48 @@ General requirements. Please be aware that a set of requirements specific to eac
     Motor Speed regulation using ROS. 
   
   **Requirements:** 
-    Requirements of Session 1, Installation of the Arduino IDE and the Rosserial package in the VM or Ubuntu (See instructions on Session2 MCR2_Arduino_IDE_Confirguration), Access to Hackerboard and a MCR2 DC motor.
-    * In case you have no access to the Hackeborad, the hardware can be replaced for an Arduino Mega, a L298n Motor Driver and a DC motor brushed with encoder (More information MCR2_General_Information_Prerequisites).
+  *	Requirements of Session 1.
+  *	Installation of the Arduino IDE and the Rosserial package in the VM or Ubuntu (See instructions on Session2 MCR2_Arduino_IDE_Confirguration), 
+  * Access to Hackerboard and an MCR2 DC motor.
+    * In case you have no access to the Hackeboard, the hardware can be replaced with an Arduino Mega, an L298n Motor Driver, and a DC motor brushed with an encoder (More information MCR2_General_Information_Prerequisites).
 
-<br/><br/><br/>
-  <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Hardware.png">
-  <img alt="Shows Hardware required." width="650" align="center">
+
+<picture>
+  <source srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Hardware.png">
+  <img alt="Shows Required Materials." width="630" align="center">
 </picture>
-<br/><br/>
+
+
+
+
 
   ### Week 4: ROS Data Acquisition
-  This week will introduce how to acquire data between ROS and the Hackerboard using ROSserial.
-  #### Topics:
-  * Encoder Basic Theory
-  * Q&A Session.
+  This week we will present how to acquire data using a microcontroller and ROS.
   
-  **Mini challenge:** Acquire data from the encoders using Arduino.
-  **Final Challenge:** PID Controller using ROS and compare with simulation.
+  #### Topics:
+  *	Encoder Basic Theory.
+  * Acquiring data from a source.
+  * Mid-Term Challenge Presentation.
+
+  #### Activities
+
+  * ##### Activity 6: Data Acquisition
+       Acquiring data from the hardware.
+
+  #### Mini-Challenges
+
+  * ##### Mini-Challenge 4: ROS Nodes
+    Acquire data from the encoders using Arduino. 
+
+  **Mid-Term Challenge:** PID Controller using ROS and compare with simulation.
   
   **Requirements:** Requirements of Session 1 and Session 3.
+
+
+
   
-  ### Week 5: Final Challenge
-  Final Challenge presentation week.
+  ### Week 5: Mid-Term Challenge
+  This week each team will present its Mid-Term Challenge.
   
   **Mid-Term Challenge:** PID Controller using ROS and compare with simulation.
   
