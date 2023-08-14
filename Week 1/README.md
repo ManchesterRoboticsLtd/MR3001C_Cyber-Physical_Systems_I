@@ -42,8 +42,17 @@ alt="ROS Basics" width="300" border="10"/></p></a>
 
 ---
 
-## Live recordings are stored in the following link
-
+## Ubuntu installation for MAC
+ * If the computer has an Intel processor, it is possible to use  VMWare Fusion Player V12 onwards.
+ * If the computer has an M! or M2 processor, the hypervisor UTM to execute the ubuntu server 22.04 ARM, this version has no GUI, so Ubuntu Desktop must be installed manually
+    (sudo apt install ubuntu-desktop)
+   Use the following links:
+   
+   [Link 1](https://www.youtube.com/watch?v=O19mv1pe76M)
+   
+   [Link 2](https://www.youtube.com/watch?v=-XFNUeWhsIQ)
+   
+ * Another way for M1/M2 processors is to use Parallels Desktop (Paid).
 
 ---
 
