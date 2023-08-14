@@ -33,6 +33,8 @@
   * Group 1 (Temporary): [Recordings G1](https://manchesterrobotics-my.sharepoint.com/:f:/g/personal/mario_mtz_manchester-robotics_com/El3itN-TsDJIuMeaSRixa48BT_nMs-610TfEHTGRmYAbpg?e=o3sjfk)
 
   * Group 2 (Temporary): [Recordings G2](https://manchesterrobotics-my.sharepoint.com/:f:/g/personal/mario_mtz_manchester-robotics_com/EgIbl4T_UwhDv_b1xOEtG5IBBHSB4eMinKGPtAjig39aJQ?e=GQdayj)
+
+  * Recordings: [Lectures](https://drive.google.com/drive/folders/1RSURGX6_LB2gyJpEMES71Xfy4662n-W8?usp=drive_link)
      
 ## General Requirements
 General requirements. Please be aware that a set of requirements specific to each session will be shown in each session subsection (Some items may be repeated).
