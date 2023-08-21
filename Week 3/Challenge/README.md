@@ -22,8 +22,7 @@ This mini challenge is intended for the student to review the concepts introduce
 * The activity involves creating a ROS node to communicate an ultrasonic sensor with the computer using ROS.
 * The sensor will be read using a microcontroller (Arduino Board) as an intermediary to save the computer's processing time.
 
-
-<p align="center"><img src="https://user-images.githubusercontent.com/67285979/218272859-0c94088b-0727-4794-adab-621ee8fdf528.png" 
+<p align="center"><img src="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/c5d71f1a-48dd-495b-826d-e55c61f6d8eb" 
 alt="ROS Basics" width="400" border="10"/></p>
 
 
@@ -52,9 +51,9 @@ alt="ROS Basics" width="400" border="10"/></p>
 
   
   ## Expected results
-  Left image shows the nodes and the topics that results from this challenge. 
+  Left image shows the results from this challenge. 
   
-  Right image shows the plot of the results (using *rqt_plot*) where the blue line represents the "motor_output" signal and the cyan line represent the "motor_input" signal.
+  Right image shows the plot of the results (using *rqt_plot*) where the blue line represents the "distance" signal.
   
-  <p align="center"><img src="https://user-images.githubusercontent.com/67285979/218245460-c8f88bf0-65f1-4e5a-94d2-9a6bed2157a3.png" 
+  <p align="center"><img src="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/b34adf38-4f40-44bd-982a-67ad4ab37deb" 
 alt="ROS Basics" width="800" border="10"/></p>
