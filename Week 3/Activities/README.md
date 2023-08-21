@@ -135,5 +135,10 @@ roscore
 
 4. In a new terminal subscribe to the topic using the command 
 ```
-rostopic pub /LED_state 
+rostopic pub /LED_state std_msgs/Bool "data: false"
 ```
+or 
+```
+rostopic pub /LED_state std_msgs/Bool "data: true"
+```
+depending on the state of the LED.
