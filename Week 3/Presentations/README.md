@@ -18,8 +18,14 @@
 ---
   ## Presentations
   
-   ### MCR2_ROS_Introduction_Practicalities
+   ### MCR2_ROS_Rosserial_Control
 
+   * [Rosserial](http://wiki.ros.org/rosserial)
+   * [Rosserial Arduino Setup](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
+   * [Arduino](https://www.arduino.cc/en/software)
+   * [Arduino Ubuntu](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing)
+   * [Port Permissions Ubuntu](https://askubuntu.com/questions/58119/changing-permissions-on-serial-port)
+   * [VM USB ports](https://docs.vmware.com/en/VMware-Workstation-Player-for-Windows/15.0/com.vmware.player.win.using.doc/GUID-E003456F-EB94-4B53-9082-293D9617CB5A.html)
    * [ROS Parameters](http://wiki.ros.org/rospy_tutorials/Tutorials/Parameters)
    * [Rosparam](http://wiki.ros.org/rosparam)
    * [Parameter Server](http://wiki.ros.org/rospy/Overview/Parameter%20Server)

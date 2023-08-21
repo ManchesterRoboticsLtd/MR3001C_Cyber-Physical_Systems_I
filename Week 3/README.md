@@ -12,26 +12,24 @@
 
 ---
 # MR3001C Cyber-Physical Systems I
-This session is intended for the students to learn some of ROS tools that will be required in the following sessions.
+This session is intended for the students to learn how to connect ROS with external hardware using rosserial tools that will be required in the following sessions.
 
 ### << This session contains some "follow-me" activities, we encourage the students to bring their laptop with Ubuntu and ROS (Noetic) installed or hte MCR2 VM during the session >>
 
   ## Session
   * Review of previous sessions
-  * Launch Files
-  * ROS Namespaces
-  * ROS Parameter Server
-  * ROS Custom Messages
+  * Arduino IDE configuration
+  * Rosserial
+  * Arduino Sketch for ROS
+  * Simple talker and blinker activities
 
   ## Activities
-  * Activity 1: Multiple group namespaces
-  * Activity 2: Local, Private and Global parameters.
-  * Activity 3: Generate a custom message for the previous challenge
-  * Activity 4: Parametrise the "process" and "signal_generator" Nodes, and generate a custom message for the previous challenge.
+  * Activity 1: Hello World.
+  * Activity 2: Blink.
 
 
   ## Mini Challenge
-  * Create a Simple P or PI controller for a simulated first order process.
+  * Create a sketch to read the data from a sonar HC-SR04.
   * The mini challenge and further instructions for this session is located in the folder Challenge. 
 
   
@@ -55,7 +53,14 @@ alt="ROS Basics" width="300" border="10"/></p></a>
 #### Ubuntu
   * [Ubuntu Installation](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
+#### Sensor
+  * [Sonar](https://www.sparkfun.com/products/15569)
+
 #### ROS
+ * [Rosserial](http://wiki.ros.org/rosserial)
+ * [Rosserial Arduino Setup](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
+ * [Arduino](https://www.arduino.cc/en/software)
+ * [Arduino Ubuntu](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing)
  * [Custom Messages](http://wiki.ros.org/ROS/Tutorials/CustomMessagePublisherSubscriber%28python%29)
  * [Define Custom Messages](http://wiki.ros.org/ROS/Tutorials/DefiningCustomMessages)
  * [Messages and Services](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv)

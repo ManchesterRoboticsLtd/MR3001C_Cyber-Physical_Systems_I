@@ -11,7 +11,7 @@
 </picture>
 
 
-# Week 2: Activities and Examples
+# Week 3: Activities and Examples
 
 In this folder, the student will find the files containing the solution for Activity 1.
 ### << We Encourage the students to NOT USE the files and follow the instructions during class and in the presentation to make this activity !! >>
@@ -19,249 +19,121 @@ In this folder, the student will find the files containing the solution for Acti
 ### Requirements
 * Ubuntu in VM or dual booting
 * ROS installed
-* Compile the files using catkin_make from terminal (from the catkin_ws folder)
+* Arduino IDE
+* Arduino IDE configured
+  * Follow the tutorial on how to install it in presentation:
+       *MCR2_ROS_ArduinoIDE_Configuration*
+* Arduino ROS Libraries
+* Hackerboard/Arduino Mega/Arduino Uno
 
-## Activity 1 : Namespaces
-This activity shows the usage of namespaces.
+## Instructions
 
-<p align="center"><img src="https://user-images.githubusercontent.com/67285979/218240259-d277e45b-7d44-4ba2-8b47-6da4d4d3255c.png" 
-alt="ROS Basics" width="450" border="10"/></p>
+* Configure the Arduino IDE according to the presentation "*MCR2_ROS_ArduinoIDE_Configuration*"
+* Install the ROS Arduino libraries 
+    * Open the folder "*ROS_Libraries*"
+    * Open the folder according to your OS.
+    * Download the .zip file. 
+    * Import the libraries according to the tutorial in the following link
+        [Arduino IDE Libraires](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
+* Compile the projects
+* Upload it to the Hackerboard or Arduino
 
-* Open the launch file of the previous Talker and Listener Example (activity1.launch).
-* Modify it as follows
+## Activity 1 : hello_world
+* In this activity, a node running a simple publisher will be made.
+* This node will run inside the microcontroller and will communicate with the computer through serial communication using the rosserial protocol.
+* The node will publish a simple string message “Hello World”, which will be read by the computer using a ros command line for simplicity.
+* This activity will be divided into two parts. The first part involving Arduino IDE for programming the MCU. 
+* The second part involving the commands required to connect to the MCU to the computer.
+
+1. Open Arduino IDE (previously configured).
+2. Type the following code
 ```
-<?xml version="1.0" ?>
-<launch>
-	<group ns = "Group1">
-<node name="talker" pkg="basic_comms" type="talker.py" output="screen"    launch-prefix="gnome-terminal --command" />
+#include <ros.h>
+#include <std_msgs/String.h>
 
-<node name="listener" pkg="basic_comms" type="listener.py" output="screen" launch-prefix="gnome-terminal --command" />    
-	</group>    
+ros::NodeHandle  nh;
 
-	<group ns = "Group2">
-node name="talker" pkg="basic_comms" type="talker.py" output="screen" launch-prefix="gnome-terminal --command" />        
+std_msgs::String str_msg;
+ros::Publisher chatter("chatter", &str_msg);
 
-<node name="listener" pkg="basic_comms" type="listener.py" output="screen" launch-prefix="gnome-terminal --command" />    
-	</group>
+char hello[13] = "hello world!";
 
-</launch>
+void setup()
+{
+  nh.initNode();
+  nh.advertise(chatter);
+}
 
-```
-
-* Execute the Launch file
-```
-$ roslaunch basic_comms activity1.launch
-```
-
-* Execute the following command in a new terminal
-```
-$ rostopic list
-```
-* In a new terminal, execute the rqt_graph to visualise the nodes
-```
-$ rosrun rqt_graph rqt_graph
-```
-
-
-## Activity 2 : Parameters
-This activity shows the usage of parameters in launch files.
-<p align="center"><img src="https://user-images.githubusercontent.com/67285979/218240369-77d2d127-f807-4d8d-a260-a069a41e7f35.png" 
-alt="ROS Basics" width="450" border="10"/></p>
-
-* Open the previous example Launch file  “activity1.launch”, and overwrite it as follows (you can rename it as "activity2.launch")
-```
-<?xml version="1.0" ?>
-<launch>
-
-<param name = "Message" value = "Manchester Robotics Global!" />
-
-	<group ns = "Group1">
-		<param name = "Message" value = "Manchester Robotics Local!" />
-	
-		<node name="talker" pkg="basic_comms" type="talker.py" output="screen" launch-prefix="gnome-terminal --command" >
-		       <param name = "Message" value = "Manchester Robotics Private!" />
-		</node>
-		<node name="listener" pkg="basic_comms" type="listener.py" output="screen" launch-prefix="gnome-terminal --command" />
-	</group>
-	
-	<group ns = "Group2">
-		<param name = "Message" value = "Manchester Robotics Local!" />
-		<node name="talker" pkg="basic_comms" type="talker.py" output="screen" launch-prefix="gnome-terminal --command" >
-			<param name = "Message" value = "Manchester Robotics Private!" />
-		</node>
-		<node name="listener" pkg="basic_comms" type="listener.py" output="screen" launch-prefix="gnome-terminal --command" />
-	</group>
-
-</launch>
-```
-* Save the launch file and execute it as defined previously.
-* You will see the parameters being displayed when ROS initializes
-
-<p align="center"><img src="https://user-images.githubusercontent.com/67285979/218240379-015fa626-1293-474e-b35f-e892bbe92a7a.png" 
-alt="ROS Basics" width="450" border="10"/></p>
-
-* Open another terminal and type the following command to view the parameters in ROS
-```
-$ rosparam list
-```
-* To acces the parameter from a script, open the file “talker.py”
-* Modify the line
-```
- hello_str = “hello world %s” % rospy.get_time()
-```
-* For the following
-```
- hello_str = rospy.get_param("/Message", "No Parameter Found")  + " " + str(rospy.get_time())
-```
-* Save the file and execute it using the roslaunch file
-
-## Activity 3 : Parameter Files
-This activity, shows the usage of parameter files.
-
-<p align="center"><img src="https://user-images.githubusercontent.com/67285979/218240441-528f007a-e6b4-444b-80b1-69a10149f6b6.png" 
-alt="ROS Basics" width="250" border="10"/></p>
-
-* Inside the “basic_comms” package, create a folder named “config”.
-* Inside the config folder create a file named “params.yaml” (the file can have any name just make sure follow a convention properly).
-* Open the newly created parameter file (params.yaml) and edit it as follows
-```
-Message: "Parameter YAML File Global“
-
-Group1:  
-	Message: "Parameter YAML File local G1"  
-	talker:    
-		Message: "Parameter YAML File private G1“
-
-Group2:  
-	Message: "Parameter YAML File G2"  
-	talker:    
-		Message: "Parameter YAML File private G2"
-
-```
-* Save it and close the file.
-* Open the roslaunch file (activity1.launch)
-* Modify the launch file as follows, save it and close it.
-```
-<?xml version="1.0" ?>
-<launch>
-
-    <rosparam file = "$(find basic_comms)/config/params.yaml" command = "load" />
-    
-	<group ns = "Group1">
-        <node name="talkerG1" pkg="basic_comms" type="talker.py" output="screen" launch-prefix="gnome-terminal --command" />
-        <node name="listenerG1" pkg="basic_comms" type="listener.py" output="screen" launch-prefix="gnome-terminal --command" />
-    </group>
-
-    <group ns = "Group2">
-        <node name="talkerG2" pkg="basic_comms" type="talker.py" output="screen" launch-prefix="gnome-terminal --command" />
-        <node name="listenerG2" pkg="basic_comms" type="listener.py" output="screen" launch-prefix="gnome-terminal --command" />
-    </group>
-
-</launch>
+void loop()
+{
+  str_msg.data = hello;
+  chatter.publish( &str_msg );
+  nh.spinOnce();
+  delay(1000);
+}
 ```
 
-* Run the modified launch file.
-* Open a new terminal and type the following to view the parameters
-```
-$ rosparam list
-```
-* To access each parameter inside the "talker.py" script, the get_ parameter function must be modified as follows
+3. Select the board to be used 
+   * Tools>Board For Arduino Select Arduino AVR Boards>Arduino Mega or Mega 2560
 
-Global parameter
-```
- hello_str = rospy.get_param(“/Message", "No Parameter Found")  + " " + str(rospy.get_time())
-```
-Local Parameter
-```
- hello_str = rospy.get_param(“Message", "No Parameter Found")  + " " + str(rospy.get_time())
-```
-Private Parameter
-```
- hello_str = rospy.get_param(“~Message", "No Parameter Found")  + " " + str(rospy.get_time())
-```
+    * For Hackerboard select ESP32 Arduino > DOIT ESP32 DEVKIT V1
 
-## Activity 4 : Custom Messages
-This activity shows the usage of custom messages for the previous Mini Challenge 1.
+4. Connect the board
+5. Select the port to be used Tools>Port
+    * If working on the VM, you must first select the option Connect to a virtual machine when automatically prompted (shown) and then select the port.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/67285979/218240617-48e882ee-f746-494b-bf64-62299897c5e4.png" 
-alt="ROS Basics" width="350" border="10"/></p>
+6.  Select the board to be used Tools>Board
+    * For Arduino Select Arduino AVR Boards>Arduino Mega or Mega 2560
+    * For Hackerboard select ESP32 Arduino > DOIT ESP32 DEVKIT V1
+7. Upload your code
 
-* In the “basic_comms” package (or the student's own package), create a folder named “msg”
-* Inside the folder “msg” create a file called “signal_msg.msg”
-* Open the file using a text editor and write the following.
+9. Connect the board to the computer with ROS.
+10. (In Ubuntu) Make sure the port permissions are granted for the user. 
+
+    * In a new terminal type cd /dev to visualise the port designated by Ubuntu to the MCU. This port are usually called /ttyACM0 or /ttyUSB0.
 ```
- float32 time_x
- float32 signal_y
+ sudo chmod 666 /dev/ttyACM*
+ sudo chmod 666 /dev/ttyUSB*
 ```
-* Save the file. The custom message has been created!
-
-* Open the CMakeLists.txt, of the “basic_comms” package (or the students’ package) and find the following line and modify it as follows
+ 
+11. Launch the roscore on a new terminal
 ```
-find_package(catkin REQUIRED COMPONENTS  rospy  std_msgs  message_generation)
+roscore
+```
+12. In a new terminal use the command line tool rosrun and select the port type (USB or ACM).
 
- add_message_files(   
-	FILES
-   signal_msg.msg 
-)
-
- generate_messages(
-   DEPENDENCIES
-   std_msgs
- )
-
- catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES basic_comms
-  CATKIN_DEPENDS message_runtime
-#  DEPENDS system_lib
-)
+```
+ rosrun rosserial_python serial_node.py /dev/ttyUSB0  
+ or 
+ rosrun rosserial_python serial_node.py /dev/ttyAMC0 
 ```
 
-* Save and Close the CmakeLists.txt.
-* Open the file package.xml
-* Uncomment or add the following lines
+13. In a new terminal subscribe to the topic using the command 
 ```
-<build_depend>message_generation</build_depend>
-<exec_depend>message_runtime</exec_depend> 
+rostopic echo chatter 
 ```
-* Save and close.
 
-* Open the "signal_generator.py" file.
-* Modify it as follows
+
+## Activity 2 : blink
+
+1. Repeat the steps in the previous activity using the .ino file in the folder "*blink*".
+2. Launch the roscore on a new terminal
 ```
-#!/usr/bin/env python
-import rospy
-import numpy as np
-from basic_comms.msg import signal_msg  #Import the message to be used
+roscore
+```
+3. In a new terminal use the command line tool rosrun and select the port type (USB or ACM).
 
-if _name=='__main_’:
+```
+ rosrun rosserial_python serial_node.py /dev/ttyUSB0 
+ ```
 
-	## Declare the new message to be used
-    signal_pub=rospy.Publisher("signal",signal_msg, queue_size=10)    
+ or 
 
-	rospy.init_node("signal_generator")
-    rate = rospy.Rate(10)
-    init_time = rospy.get_time()
-    msg = signal_msg()
+ ```
+ rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+```
 
-    while not rospy.is_shutdown():
-        time = rospy.get_time()-init_time
-        signal = np.sin(time)
-
-	    ## Fill the message with the required information	
-        msg.time_x = time
-        msg.signal_y = signal
-
-	    ## Publish the message
-        signal_pub.publish(msg)
-
-        rospy.loginfo("The signal value is: %f at a time %f", signal, time)
-        rate.sleep()
-
-   ```
-
-  * Remember to make the nodes executable using the the following command inside the *catkin_ws/src/basic_comms/src* folders 
-  ```
-    chmod +x foo.py   (change the foo for the script name)
-  ```
-  * Run the node as previously defined. 
+4. In a new terminal subscribe to the topic using the command 
+```
+rostopic pub /LED_state 
+```
