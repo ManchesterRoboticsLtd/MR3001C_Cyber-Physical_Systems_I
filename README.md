@@ -125,17 +125,15 @@ General requirements. Please be aware that a set of requirements specific to eac
   #### Mini-Challenges
 
   * ##### Mini-Challenge 3: ROS Nodes
-    Motor Speed regulation using ROS. 
+    ROS communication with an Ultrasonic Sensor. 
   
   **Requirements:** 
   *	Requirements of Session 1.
   *	Installation of the Arduino IDE and the Rosserial package in the VM or Ubuntu (See instructions on Session2 MCR2_Arduino_IDE_Confirguration), 
-  * Access to Hackerboard and an MCR2 DC motor.
-    * In case you have no access to the Hackeboard, the hardware can be replaced with an Arduino Mega, an L298n Motor Driver, and a DC motor brushed with an encoder (More information MCR2_General_Information_Prerequisites).
-
+  * Access to an Arduino or a Hackerboard and an HC-SRC04 Ultrasonic Sensor.
 
 <picture>
-  <source srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/blob/main/Misc/Logos/Hardware.png">
+  <source srcset="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/53196e95-1930-4e9a-9a29-ea66b2e6138b">
   <img alt="Shows Required Materials." width="630" align="center">
 </picture>
 
