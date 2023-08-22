@@ -120,7 +120,8 @@ General requirements. Please be aware that a set of requirements specific to eac
   #### Activities
 
    * ##### Activity 5: ROS Serial Communication
-     Rosserial communication with Arduino/ESP32.
+     Rosserial communication publisher with Arduino/ESP32.
+     Rosserial communication subscriber with Arduino/ESP32.
 
   #### Mini-Challenges
 
@@ -137,41 +138,6 @@ General requirements. Please be aware that a set of requirements specific to eac
   <img alt="Shows Required Materials." width="630" align="center">
 </picture>
 
-
-
-
-
-  ### Week 4: ROS Data Acquisition
-  This week we will present how to acquire data using a microcontroller and ROS.
-  
-  #### Topics:
-  *	Encoder Basic Theory.
-  * Acquiring data from a source.
-  * Mid-Term Challenge Presentation.
-
-  #### Activities
-
-  * ##### Activity 6: Data Acquisition
-       Acquiring data from the hardware.
-
-  #### Mini-Challenges
-
-  * ##### Mini-Challenge 4: ROS Nodes
-    Acquire data from the encoders using Arduino. 
-
-  **Mid-Term Challenge:** PID Controller using ROS and compare with simulation.
-  
-  **Requirements:** Requirements of Session 1 and Session 3.
-
-
-
-  
-  ### Week 5: Mid-Term Challenge
-  This week each team will present its Mid-Term Challenge.
-  
-  **Mid-Term Challenge:** PID Controller using ROS and compare with simulation.
-  
-  **Requirements:** Requirements of Session 1 and Session 3.
 
 
   ---
