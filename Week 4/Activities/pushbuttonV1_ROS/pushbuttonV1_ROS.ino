@@ -78,7 +78,7 @@ bool ledStatus = LOW;                      // Status of the LED
 bool buttonStatus = LOW;                   // Current Status of the button
 bool PrevbuttonStatus = LOW;               // Previous Status of the button
 double debounceTime = 10;                  // Debounce time in mS
-int32_t counter = 0;                           // Pulse counter
+int32_t counter = 0;                       // Pulse counter
 volatile bool interruptStatus = false;     // Volatile global variable for the interrupt (Volatile variables are used due to the capacity of "Rapid changes")
 long int timer = 0.0;                      // Debounce timer
 
@@ -111,14 +111,14 @@ void loop() {
     buttonStatus = digitalRead(ButtonPin);
     if(PrevbuttonStatus != buttonStatus)
     {
-      if (millis()-timer>debounceTime)
+      if (millis()-timer>debounceTime)          // Check if the debounce timer has finished
       {
         ledStatus = HIGH - ledStatus;           // Toggle state
         digitalWrite(LedPin, ledStatus);        // Turn the LED on/off
-        interruptStatus = false; 
+        interruptStatus = false;                // Reset the interupt variable
       }
     }
-    PrevbuttonStatus = buttonStatus;
+    PrevbuttonStatus = buttonStatus;            // Update the previous status
   }
   else{
       pushed_msg.data = ledStatus;            // Populate the message
