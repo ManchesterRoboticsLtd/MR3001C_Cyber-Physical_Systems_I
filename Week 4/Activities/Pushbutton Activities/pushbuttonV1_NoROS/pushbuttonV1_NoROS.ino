@@ -53,9 +53,6 @@
   3. AFTER the timer has elapsed, the change the status of the LED (toggle). 
 */
 
-// Libraires used in this program.
-#include <ros.h>
-#include <std_msgs/Bool.h>
 
 // Define the LEDPin and ButtonPin.
 #define LedPin  LED_BUILTIN       // LEDBuiltin (Pin13)
