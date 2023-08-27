@@ -10,10 +10,10 @@
   <img alt="Shows MCR2 logo in black or white." width="150" align="right">
 </picture>
 
-# Week 3: Mini challenge
+# Week 4: Half-Term challenge
 
-* In this folder, the student will find the neccessary files for Mini challenge 2.
-* The instruction for this challenge can be found inside the presentation *MCR2_MiniChallenge_3*
+* In this folder, the student will find the necessary files for Half-Term Challenge.
+* The instruction for this challenge can be found inside the presentation *MCR2_MiniChallenge_4*
 
 ### << We Encourage the students to NOT USE the files and follow the instructions during class and in the presentation to make this activity !! >>
 
