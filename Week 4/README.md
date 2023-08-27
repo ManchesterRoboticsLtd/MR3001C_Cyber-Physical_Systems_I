@@ -27,10 +27,17 @@ This session is intended for the students to learn how to build their own ROS en
   * Activity 1: PWM power regulation.
   * Activity 2: Interrupts.
 
+  ## Materials Required for Activities
+
+![image](https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/05c0446a-350f-44ed-a9f5-1c5527f35084)
+
 
   ## Mid-term Challenge
   * Create a full environment for controlling a DC motor using ROS and Arduino.
   * The mid-term challenge and further instructions for this session are located in the folder Challenge. 
+
+  ## Materials required for Half-Term Challenge
+  ![image](https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/096d4afc-c781-4afd-be22-309751294873)
 
   
   Please note: This repository contains all the necessary files and presentations given during this session and the instructions for each one of the activities of the session.
