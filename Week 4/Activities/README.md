@@ -40,5 +40,4 @@ alt="ROS Basics" width="400" border="10"/></p>
 * Compile the projects
 * Upload it to the Hackerboard or Arduino
 
-## Activities
-  * Open each folder for a more detail description of each activity.
+### Open each folder for a more detailed description of each activity.
