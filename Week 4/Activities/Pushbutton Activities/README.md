@@ -86,6 +86,15 @@ alt="ROS Basics" width="400" border="10"/></p>
 5. Publish a Float32 value in the range [0,1] to the /PWM topic
 6. Look at the Arduino Mega Builtin LED
 
+### Pakcage: ros_arduino_comms
+This package is just a launch file, intended to show the student how to launch the rosserial commnuication using a launch file.
 
+1. Download the package inside your workspace (catkin_ws/src)
+2. Source the files source /devel/setup.bash (if required)
+3. launch the file (make sure Arduino is connected)
+   
+   ```
+     roslaunch ros_arduino_comms pushbutton.launch
+  ```
 
 
