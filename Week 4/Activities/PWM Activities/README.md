@@ -48,7 +48,7 @@ Increase/decrease the luminosity of the Built-in LED (Arduino Mega Pin13) by inc
 3. Download the program to the Arduino
 4. Observe the Built-in LED on pin 13.
 
-## Activity 2: pwmV1_ROS
+## Activity 2: pwmV2_ROS
 ### Usage
 Increase/decrease the luminosity of the Built-in LED (Arduino Mega Pin13) by increasing the output PWM duty cycle value from 0 -> 255.
 This program remaps a float point value in the range [0,1], received from an external computer using ROS by subscribing to the topic "/PWM", to an integer analog PWM value in the range [0, 255] i.e., [0,1] -> [0,255].
