@@ -194,7 +194,28 @@
   12. Press Add
   13. By display type>>TF
 
+## Activity 2.2: Multiple Markers
+  1. In this activity the knowledge acquired in the previous two activities will be used to create a series of planets orbiting a sun.
+  2. In the package “markers” create a new node called “markers.py”
+  
+  ```
+    cd ~/catkin_ws/src/markers/scripts/
+    touch scripts/markers.py
+  ```
 
+  3. Give executable permission to the file
+  
+  ```
+    cd ~/catkin_ws/src/markers/scripts/
+    sudo chmod +x markers.py
+  ```
+
+  4. Modify the CMake file to include the newly created node to the 
+    ```
+     catkin_install_python(PROGRAMS scripts/marker.py scripts/markers.py
+       DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+    ```
+  5. Follow the previous two activities to add a planet marker to the “sun” frame, make a moon rotate around the planet and an arrow pointing to the moon using transforms (Look at the code inside the file *"markers.py"*). 
 
 
 
