@@ -122,11 +122,79 @@
 <launch>
     <node name="marker" pkg="markers" type="marker.py" output="screen"/> 
 
-<node pkg="tf2_ros" type="static_transform_publisher" name="link1" args="2  1   1   3.1416  0   0   world   link1"/>
+<node pkg="tf2_ros" type="static_transform_publisher" name="link1" args="2  1   1   3.1416  0   0   sun   link1"/>
 </launch>
 
   ```
-  3. The Launch file Launches the previously created marker and creates a static transform 
+  3. The Launch file Launches the previously created marker and creates a static transform
+  4. Launch the file
+   ```
+   roslaunch marker marker.launch
+  ```
+  5. Open RVIZ in another terminal
+  ```
+  rosrun rviz rviz
+  ```
+  
+  6. Change the Fixed Frame to “world”
+  7. Click the button “Add” and on the “By display type” tab, select “Axes”.
+  8. Repeat to Add two Axes
+  9. Select one of the axes and change its “Reference Frame” to “link1”
+  10. Click the button “Add” and on the “By Topic” tab, select Marker
+  11. Click the button “Add” and on the “By display type” tab, select “TF”.
 
 
-### A more detailed description of each activity is inside the folder.
+## Activity 2.2: Transformations
+  1. In this activity, Static and Dynamic transforms will be generated in a script.
+  2. In the package “markers” create a new node called “tf_act.py”
+  
+  ```
+    cd ~/catkin_ws/src/markers/scripts/
+    touch scripts/tf_act.py
+  ```
+  
+  4. Give executable permission to the file
+ 
+  ```
+  cd ~/catkin_ws/src/markers/scripts/
+  sudo chmod +x tf_act.py
+  ```
+  
+  5. Modify the CMake file to include the newly created node to the 
+ 
+ ```
+ catkin_install_python(PROGRAMS scripts/marker.py scripts/tf_act.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+  ```
+
+  6. Open the file tf_act.py
+    * Define three new frames called, inertial, sun and planet, their publishers and publish the transforms (Look at the code inside the file *"tf_act.py"*). 
+  7. Compile the program
+     ```
+    cd ~/catkin_ws
+    catkin_make
+     ```
+     
+  8. Start ROS
+   ```
+  roscore
+   ```
+  9. Run the node
+   ```
+    rosrun markers tf_act.py 
+   ```
+
+  10. Start RViz
+      
+   ```
+    rosrun rviz rviz 
+   ```
+
+  11. Add the marker 
+  12. Press Add
+  13. By display type>>TF
+
+
+
+
+
