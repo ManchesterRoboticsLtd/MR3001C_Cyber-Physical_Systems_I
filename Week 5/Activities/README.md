@@ -24,7 +24,7 @@
 * Download the *"markers"* project to you *"catkin_ws/src"* folder
 * Compile the project using *"catkin_make"*
 
-## Activity 1
+## Activity 1: Marker
   ### Marker
   1. Make a new package, with the following packages 
     
@@ -107,6 +107,26 @@
   12. Add the marker 
   * Press Add
   * By topic>>/sun>> marker
+
+## Activity 2.1: Declaring a static transform
+  1. In the package *“markers”* create a launch file called *"marker.launch”*
+
+    ```
+    cd ~/catkin_ws/src/markers/ && mkdir launch
+    cd launch && touch marker.launch
+    ```
+  2. Write and save the following inside the launch file
+
+  ```
+<?xml version="1.0" ?>
+<launch>
+    <node name="marker" pkg="markers" type="marker.py" output="screen"/> 
+
+<node pkg="tf2_ros" type="static_transform_publisher" name="link1" args="2  1   1   3.1416  0   0   world   link1"/>
+</launch>
+
+  ```
+  3. The Launch file Launches the previously created marker and creates a static transform 
 
 
 ### A more detailed description of each activity is inside the folder.
