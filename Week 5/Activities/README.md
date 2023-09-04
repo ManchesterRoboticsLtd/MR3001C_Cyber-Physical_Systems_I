@@ -168,18 +168,22 @@
   ```
 
   6. Open the file tf_act.py
-    * Define three new frames called, inertial, sun and planet, their publishers and publish the transforms (Look at the code inside the file *"tf_act.py"*). 
+   
+  * Define three new frames called, inertial, sun and planet, their publishers and publish the transforms (Look at the code inside the file *"tf_act.py"*). 
+ 
   7. Compile the program
-     ```
+
     cd ~/catkin_ws
     catkin_make
-     ```
+
      
   8. Start ROS
+  
    ```
   roscore
    ```
   9. Run the node
+   
    ```
     rosrun markers tf_act.py 
    ```
@@ -210,11 +214,13 @@
     sudo chmod +x markers.py
   ```
 
-  4. Modify the CMake file to include the newly created node to the 
+  4. Modify the CMake file to include the newly created node
+
     ```
      catkin_install_python(PROGRAMS scripts/marker.py scripts/markers.py
        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
     ```
+    
   5. Follow the previous two activities to add a planet marker to the “sun” frame, make a moon rotate around the planet and an arrow pointing to the moon using transforms (Look at the code inside the file *"markers.py"*). 
 
 
