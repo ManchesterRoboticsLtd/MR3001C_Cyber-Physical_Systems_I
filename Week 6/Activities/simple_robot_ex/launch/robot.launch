@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <launch>
-    <!--<include file="$(find rplidar_ros)/launch/rplidar.launch" />-->
+    <include file="$(find rplidar_ros)/launch/rplidar.launch" />
 
     <node name="robot" pkg="simple_robot_ex" type="simple_robot_ex.py" output="screen"/> 
-    <node name="LaserScanner" pkg="simple_robot_ex" type="laserScanner.py" output="screen"/>
+    <!--<node name="LaserScanner" pkg="simple_robot_ex" type="laserScanner.py" output="screen"/>-->
     <node name="Laser2PC" pkg="simple_robot_ex" type="laser2pc.py" output="screen"/> 
 
     

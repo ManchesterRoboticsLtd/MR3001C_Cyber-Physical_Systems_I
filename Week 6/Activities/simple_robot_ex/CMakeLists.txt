@@ -165,7 +165,7 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
  catkin_install_python(PROGRAMS
-   scripts/simple_robot_ex.py scripts/laser2pc.py scripts/laserScanner.py
+   scripts/simple_robot_ex.py scripts/laser2pc.py scripts/laserScanner.py scripts/laserListener.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
