@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+    <node name="marker" pkg="markers" type="markers.py" output="screen"/> 
+    <node name="markers_tf" pkg="markers" type="markers_listener.py" output="screen"/> 
+    <node name="rviz" pkg="rviz" type="rviz" required="true" /> 
+
+</launch>
