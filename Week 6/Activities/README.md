@@ -11,22 +11,13 @@
 </picture>
 
 
-# Week 4: Activities and Examples
+# Week 5: Activities and Examples
 .
 ### << We Encourage the students to NOT USE the files and follow the instructions during class and in the presentation to make this activity !! >>
 
 ### Requirements
 * Ubuntu in VM or dual booting
 * ROS installed
-* Arduino IDE
-* Arduino IDE configured
-  * Follow the tutorial on how to install it in presentation:
-       *MCR2_ROS_ArduinoIDE_Configuration*
-* Arduino ROS Libraries
-* Hackerboard/Arduino Mega/Arduino Uno
-
-<p align="center"><img src="https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/05c0446a-350f-44ed-a9f5-1c5527f35084" 
-alt="ROS Basics" width="400" border="10"/></p>
 
 ## Instructions
 
