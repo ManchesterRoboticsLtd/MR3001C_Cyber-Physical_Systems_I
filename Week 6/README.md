@@ -12,7 +12,7 @@
 
 ---
 # MR3001C Cyber-Physical Systems I
-This session intends the students to learn about RVIZ, Markers, URDF files, and Transformations.
+This session intends for the students to learn about RVIZ, Markers, URDF files, and Transformations.
 
 ### << This session contains some "follow-me" activities; we encourage the students to bring their laptop with Ubuntu and ROS (Noetic) installed or hte MCR2 VM during the session >>
 
