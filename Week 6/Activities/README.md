@@ -13,7 +13,7 @@
 
 # Week 5: Activities and Examples
 .
-### << We Encourage the students to NOT USE the files and follow the instructions during class and in the presentation to make this activity !! >>
+### << We Encourage the students NOT to USE the files and follow the instructions during class and in the presentation to make this activity !! >>
 
 ### Requirements
 * Ubuntu in VM or dual booting
@@ -21,14 +21,8 @@
 
 ## Instructions
 
-* Configure the Arduino IDE according to the presentation "*MCR2_ROS_ArduinoIDE_Configuration*"
-* Install the ROS Arduino libraries 
-    * Open the folder "*ROS_Libraries*"
-    * Open the folder according to your OS.
-    * Download the .zip file. 
-    * Import the libraries according to the tutorial in the following link
-        [Arduino IDE Libraires](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
+* Download the activities to the "*catkin_ws*"
 * Compile the projects
-* Upload it to the Hackerboard or Arduino
+* Run the different launch files
 
 ### Open each folder for a more detailed description of each activity.
