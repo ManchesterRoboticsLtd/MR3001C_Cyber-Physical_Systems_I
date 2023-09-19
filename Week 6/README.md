@@ -12,35 +12,33 @@
 
 ---
 # MR3001C Cyber-Physical Systems I
-This session is intended for the students to learn how to build their own ROS environment for a simple robotic application.
+This session intends the students to learn about RVIZ, Markers, URDF files, and Transformations.
 
-### << This session contains some "follow-me" activities, we encourage the students to bring their laptop with Ubuntu and ROS (Noetic) installed or hte MCR2 VM during the session >>
+### << This session contains some "follow-me" activities; we encourage the students to bring their laptop with Ubuntu and ROS (Noetic) installed or hte MCR2 VM during the session >>
 
   ## Session
   * Review of previous sessions
-  * Low-level Robotics Theory
-  * Motor Drivers
-  * Encoders
+  * Transformations
+  * URDF Files
+  * Robot State Publisher
+  * Joint State Publisher
   * Applications
 
   ## Activities
-  * Activity 1: PWM power regulation.
-  * Activity 2: Interrupts.
+  * Activity 1: Transformation Listener.
+  * Activity 2: URDF Files and Joints.
+  * Activity 3: Links Activities
 
   ## Materials Required for Activities
+  * Computer with ROS
 
-![image](https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/05c0446a-350f-44ed-a9f5-1c5527f35084)
 
+  ## Week 5 Mini-Challenge
+  * Create the Dashgo B1 Robot using URDF Files.
+  * The mini challenge and further instructions for this session are located in the folder Challenge. 
 
-  ## Mid-term Challenge
-  * Create a full environment for controlling a DC motor using ROS and Arduino.
-  * The mid-term challenge and further instructions for this session are located in the folder Challenge. 
-
-  ## Materials required for Half-Term Challenge
-  ![image](https://github.com/ManchesterRoboticsLtd/MR3001C_Cyber-Physical_Systems_I/assets/67285979/096d4afc-c781-4afd-be22-309751294873)
-
-  
-  Please note: This repository contains all the necessary files and presentations given during this session and the instructions for each one of the activities of the session.
+---
+  This repository contains all the necessary files and presentations given during this session and the instructions for each one of the activities of the session.
 
 ---
 
@@ -90,6 +88,11 @@ alt="ROS Basics" width="300" border="10"/></p></a>
   * [Video Placa L298 Espanol](https://www.youtube.com/watch?v=taoOnq6x5ts)
 
 #### ROS
+ * [URDF Files](http://wiki.ros.org/urdf)
+ * [URDF Tutorials](http://wiki.ros.org/urdf/Tutorials)
+ * [URDF Joints](http://wiki.ros.org/urdf/XML/joint)
+ * [URDF Robot](http://wiki.ros.org/urdf/XML/robot)
+ * [URDF Link](http://wiki.ros.org/urdf/XML/link)
  * [Rosserial](http://wiki.ros.org/rosserial)
  * [Rosserial Arduino Setup](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
  * [Arduino](https://www.arduino.cc/en/software)
