@@ -11,15 +11,10 @@
 </picture>
 
 ---
-# Week 4: Presentations.
+# Week 6: Presentations.
 
-  * In this folder you will find the presentation used during this course.
+  * In this folder, you will find the presentation used during this course.
 
 ---
-  ## Presentations
-  
-   ### MCR2_DC_Motor_Control: 
-   * Presentation about basic robotics theory, sensors, and actuators used in the industry.
-   ### MCR2_Interrupts_PWM
-   * Presentations about how to implement interrupts and PWM signals using Arduino
+
 
