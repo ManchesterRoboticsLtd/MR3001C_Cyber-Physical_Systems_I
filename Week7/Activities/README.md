@@ -11,7 +11,7 @@
 </picture>
 
 
-# Week 6: Activities and Examples
+# Week 7: Activities and Examples
 .
 ### << We Encourage the students NOT to USE the files and follow the instructions during class and in the presentation to make this activity !! >>
 
