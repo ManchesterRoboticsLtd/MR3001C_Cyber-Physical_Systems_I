@@ -11,7 +11,7 @@
 </picture>
 
 ---
-# Week 6: Presentations.
+# Week 7: Presentations.
 
   * In this folder, you will find the presentation used during this course.
 
