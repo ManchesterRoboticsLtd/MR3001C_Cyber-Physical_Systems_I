@@ -12,29 +12,25 @@
 
 ---
 # MR3001C Cyber-Physical Systems I
-This session intends for the students to learn about RVIZ, Markers, URDF files, and Transformations.
+This session intends for the students to learn about the difference between simulator environments, state-space theory that will be used in the next sessions, and develop a simple dynamical simulation using the knowledge of the previous sessions.
 
 ### << This session contains some "follow-me" activities; we encourage the students to bring their laptop with Ubuntu and ROS (Noetic) installed or hte MCR2 VM during the session >>
 
   ## Session
   * Review of previous sessions
-  * Transformations
-  * URDF Files
-  * Robot State Publisher
-  * Joint State Publisher
-  * Applications
+  * Dynamical simulators
+  * State Space Theory
+  * Robot Dynamics
 
   ## Activities
-  * Activity 1: Transformation Listener.
-  * Activity 2: URDF Files and Joints.
-  * Activity 3: Links Activities
+  * Activity 1: Develop a DC motor dynamical simulator.
 
   ## Materials Required for Activities
   * Computer with ROS
 
 
-  ## Week 5 Mini-Challenge
-  * Create the Dashgo B1 Robot using URDF Files.
+  ## Week 6 Mini-Challenge
+  * Develop a Dashgo B1 Robot Nonholonomic Dynamic simulator using URDF Files.
   * The mini challenge and further instructions for this session are located in the folder Challenge. 
 
 ---
@@ -42,21 +38,32 @@ This session intends for the students to learn about RVIZ, Markers, URDF files, 
 
 ---
 
-## YouTube Video
-  In this video, Rebeca shows us some of the critical concepts of ROS. This video is for reference only. The activities shown are not required to be performed. Some concepts in this video will be seen in session 2.
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=IF-k6KhhRkE
-" target="_blank"><p align="center"><img src="http://img.youtube.com/vi/IF-k6KhhRkE/0.jpg" 
-alt="ROS Basics" width="300" border="10"/></p></a> 
-
-<div align="center"> https://www.youtube.com/watch?v=IF-k6KhhRkE&ab_channel=ManchesterRobotics </div>
-
+## YouTube Videos
+  * [Dynamical Systems](https://www.youtube.com/watch?v=9RG-AuUSuhM&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=2&ab_channel=ManchesterRobotics)
+  * [Pendulum System](https://www.youtube.com/watch?v=NjcRbP_L_-Y&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=3&ab_channel=ManchesterRobotics)
+  * [Pendulum Phase Portrait](https://www.youtube.com/watch?v=xi1vUEH9OO8&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=4&ab_channel=ManchesterRobotics)
+  * [Pendulum Phase Portrait 3D](https://www.youtube.com/watch?v=EKiWPS61nqo&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=5&ab_channel=ManchesterRobotics)
+  * [Pendulum State Space](https://www.youtube.com/watch?v=eZfnn9VGsqY&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=6&ab_channel=ManchesterRobotics)
+  * [Pendulum Phase Portrait](https://www.youtube.com/watch?v=mTH1MSlv97c&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=7&ab_channel=ManchesterRobotics)
+  * [Van der Pol](https://www.youtube.com/watch?v=78Cqfejpb3U&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=8&ab_channel=ManchesterRobotics)
+  * [Lorenz Attractor](https://www.youtube.com/watch?v=lSlIbP3YYyM&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=9&ab_channel=ManchesterRobotics)
+  * [Linear systems](https://www.youtube.com/watch?v=XuR6oNYjG10&list=PLqCuMQTwnIP99CrzdPEroGhdAhzVfvWgR&index=10&ab_channel=ManchesterRobotics)
 ---
 
 
 ### Useful Links: 
-
+#### Dynamical Systems
+  * [Nonlinear Systems](https://books.google.fr/books/about/Nonlinear_Systems.html?id=t_d1QgAACAAJ&redir_esc=y)
+  * [Nonlinear & Adaptive Systems](https://digital-library.theiet.org/content/books/ce/pbce084e)
+  * [Nonlinear Dynamical Systems](https://books.google.fr/books/about/Nonlinear_Dynamical_Systems.html?id=FPlQAAAAMAAJ&redir_esc=y)
+  * [Linear Systems Primer](https://wp.kntu.ac.ir/hrahmanei/Adv-Control-Books/A-Linear-Systems-Primer.pdf)
+  * [Lectures on Nonlinear Systems](https://web.mit.edu/nsl/www/videos/lectures.html)
+  * [Applied Nonlinear Control](https://books.google.fr/books/about/Applied_Nonlinear_Control.html?id=cwpRAAAAMAAJ&redir_esc=y)
+  * [Dynamic Model of a DC Motor](https://www.ijser.org/researchpaper/Dynamic-Model-Analysis-of-a-DC-Motor-in-MATLAB.pdf)
+    
 #### Robotics
+* [Dynamic Model of a Differential Drive Robot](https://www.hilarispublisher.com/open-access/dynamic-modelling-of-differentialdrive-mobile-robots-using-lagrange-and-newtoneuler-methodologies-a-unified-framework-2168-9695.1000107.pdf)
+* [Kinematic Model of Differential Drive Robot](https://globaljournals.org/GJRE_Volume14/1-Kinematics-Localization-and-Control.pdf)
 * [Introduction to Autonomous Mobile Robots](https://ieeexplore.ieee.org/book/6267528)
 * [PID Control](https://ieeexplore.ieee.org/document/1453566)
 * [Closed Loop Control](https://www.electronics-tutorials.ws/systems/closed-loop-system.html)
