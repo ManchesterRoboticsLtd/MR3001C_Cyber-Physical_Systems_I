@@ -10,16 +10,16 @@
   <img alt="Shows MCR2 logo in black or white." width="150" align="right">
 </picture>
 
-# Week 6: Mini challenge
+# Week 7: Mini challenge
 
 * The student will find the necessary files for the Mini Challenge in this folder.
-* The instruction for this challenge can be found inside the presentation *MCR2_MiniChallenge_5*
+* The instruction for this challenge can be found inside the presentation *MCR2_MiniChallenge_6*
 
 ### << We Encourage the students NOT to USE the files and follow the instructions during class and in the presentation to make this activity !! >>
 
 ## Description
 This challenge is intended for the student to review the concepts introduced in the previous sessions.
-* The activity consists of making a DashGo B1 RObot using the URDF files
+* The activity consists of developing a kinematic simulator for the DashGo B1 RObot using the URDF files
 
 ### More information, further instructions, and some hints can be found in *MCR2_MiniChallenge_4*
 
