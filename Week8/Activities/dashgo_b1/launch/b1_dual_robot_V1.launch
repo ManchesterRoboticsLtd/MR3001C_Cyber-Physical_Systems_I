@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--Load parameters file -->
+    <rosparam file = "$(find dashgo_b1)/config/params.yaml" command = "load" />
+
+    <arg name="G1" default="sim1"/>
+    <arg name="G2" default="sim2"/> 
+
+    <!--Load mesh model -->
+    <arg name="b1_sim_model" default="$(find dashgo_b1)/urdf/EAI_robot.urdf"/>
+    <param name="b1_sim_description" command="cat $(arg b1_sim_model)" />
+
+    <group ns="$(arg G1)">        
+        <!--Robot state publisher -->
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="sim1_state_publisher" output="screen">
+            <remap from="robot_description" to="b1_sim_description" />
+            <param name="tf_prefix" value="$(arg G1)" />
+        </node>
+
+        <!--Initialise kinematic model -->
+        <node pkg="dashgo_b1" type="nonholo_kinematic_sim.py" name="DashgoB1_Robot">
+            <remap from="/$(arg G1)/cmd_vel" to="/cmd_vel" />
+        </node>
+
+        <!--Initialise localisation node -->
+        <node pkg="dashgo_b1" type="localisation_V1.py" name="Odometry" />
+
+        <!--Initialise joint pub node -->
+        <node pkg="dashgo_b1" type="b1_JointPub.py" name="Joint_Publisher" output="screen" /> 
+    </group>
+
+    <group ns="$(arg G2)">
+        <!--Robot state publisher -->
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="sim2_state_publisher" output="screen">
+            <remap from="robot_description" to="b1_sim_description" />
+            <param name="tf_prefix" value="$(arg G2)" />
+        </node>
+
+        <!--Initialise kinematic model -->
+        <node pkg="dashgo_b1" type="nonholo_kinematic_sim.py" name="DashgoB1_Robot" >
+            <remap from="/$(arg G2)/cmd_vel" to="/cmd_vel" />
+        </node>
+
+        <!--Initialise localisation node -->
+        <node pkg="dashgo_b1" type="localisation_V1.py" name="Odometry" />  
+
+        <!--Initialise joint pub node -->
+        <node pkg="dashgo_b1" type="b1_JointPub.py" name="Joint_Publisher" output="screen" /> 
+    </group>
+
+    <!--Initialise RVIZ -->
+    <arg name="rvizconfig" default="$(find dashgo_b1)/rviz/b1_dual_sim.rviz" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /> 
+
+    <!--Initialise teleoperation node -->
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="Teleop" output="screen" /> 
+
+</launch>

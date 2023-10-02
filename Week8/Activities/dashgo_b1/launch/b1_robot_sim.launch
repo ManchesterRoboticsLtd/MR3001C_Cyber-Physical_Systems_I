@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--Load parameters file -->
+    <rosparam file = "$(find dashgo_b1)/config/params.yaml" command = "load" /> 
+
+    <arg name="G1" default="sim1"/>
+
+    <group ns="$(arg G1)">
+        <!--Load parameters file -->
+        <rosparam file = "$(find dashgo_b1)/config/params.yaml" command = "load" /> 
+
+        <!--Initialise kinematic_model -->
+        <node pkg="dashgo_b1" type="nonholo_kinematic_sim.py" name="DashgoB1_Robot" />
+
+        <!--Initialise rqt_plot Visualiser -->
+        <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot" output="screen"  args="/$(arg G1)/pose_sim/pose/position/x /$(arg G1)/pose_sim/pose/position/y">
+        </node>
+    </group>
+
+</launch>
