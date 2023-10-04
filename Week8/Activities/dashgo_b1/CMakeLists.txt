@@ -165,7 +165,7 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
-   scripts/nonholo_kinematic_sim.py scripts/localisation.py scripts/localisation_V0.py scripts/localisation_V1.py scripts/b1_JointPub.py
+   scripts/nonholo_kinematic_sim.py scripts/localisation_V0.py scripts/localisation_V1.py scripts/b1_JointPub.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
