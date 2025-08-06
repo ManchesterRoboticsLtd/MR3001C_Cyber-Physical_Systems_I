@@ -1,8 +1,0 @@
-wheelBase : 0.18
-wheelRadius : 0.05
-system_sample_time : 0.02
-
-initialPose_x : 0.0
-initialPose_y : 0.0
-initialPose_th : 0.0
-rate : 100

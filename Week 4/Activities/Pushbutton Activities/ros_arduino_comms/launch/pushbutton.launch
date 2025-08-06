@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<launch>
-    <node name="pushbutton" pkg="rosserial_python" output="screen" type="serial_node.py">
-    <param name="port"	type="string"	value="/dev/ttyACM0"/>   
-    </node>
-
-</launch>
