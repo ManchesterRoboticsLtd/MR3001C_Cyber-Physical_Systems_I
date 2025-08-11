@@ -26,7 +26,7 @@ The second part of the course is dedicated to the analysis, control, and simulat
    
 ## General Information
 * MCR2 Person in Charge: Dr Alexandru Stancu and Dr Mario Martinez
-* Tecnológico de Monterrey Person in Charge: Dr.  Consuelo Rodríguez Padilla and Dr. Carlos Vazquez
+* Tecnológico de Monterrey Person in Charge: Dr.  Consuelo Rodríguez Padilla and Dra. Aline Drivet
 * Duration: 10 Weeks
 *	Student counselling: Via appointment.
 *	Classes: 10 sessions, 1 group.
@@ -35,7 +35,7 @@ The second part of the course is dedicated to the analysis, control, and simulat
 * Start Date: 11 Aug 2025
 
 ## Live Sessions (Recordings)
-  * [Recordings]()
+  * [Recordings](https://tecmx-my.sharepoint.com/:f:/g/personal/mario_mtz_tec_mx/EnwPzNxWDlNPv2wBocyykc8BbAlirZAF220Vryc_issAmQ?e=7ONZjl)
      
 ## General Requirements
 General requirements. Please be aware that a set of requirements specific to each session will be shown in each session subsection (Some items may be repeated).
@@ -48,7 +48,7 @@ General requirements. Please be aware that a set of requirements specific to eac
 
 ## Weekly Sessions
 
-### Week 1: ROS Introduction
+### Week 1-2: ROS Introduction
   This session will introduce the teaching team and the basics of ROS.
 
 #### Session 1:
@@ -81,7 +81,7 @@ General requirements. Please be aware that a set of requirements specific to eac
  * If Ubuntu 20.04 cannot be installed, MCR2 offers a Virtual Machine with ROS preinstalled (installation instructions in Week 1 Folder).
 
 
-### Week 2: ROS Practicalities
+### Week 3-4: ROS Practicalities
   This week, we will deliver a comprehensive introduction to some of the most practical and relevant features of the Robot Operating System (ROS). 
 
 #### Session 1:
@@ -129,7 +129,7 @@ General requirements. Please be aware that a set of requirements specific to eac
     Requirements of Session 1.
 
 
-### Week 3: URDF Files
+### Week 5-6: URDF Files
 This week, we will introduce the concept of URDF files in the context of Robot Operating System (ROS). This will involve an in-depth exploration of these files' underlying architecture and functionality, focusing on their role in facilitating the creation and deployment of robotic systems.
 
 #### Session 1:
@@ -184,7 +184,7 @@ This week, we will introduce the concept of URDF files in the context of Robot O
     Requirements of Session 1.
 
 
-### Week 4: Mobile Robots Simulation.
+### Week 7-8: Mobile Robots Simulation.
 This week's curriculum will encompass the core concepts of mobile robots and simulation.
 
 #### Session 1:
@@ -219,7 +219,7 @@ This week's curriculum will encompass the core concepts of mobile robots and sim
     Requirements of Session 1.
 
 
-### Week 5: Open Loop/Closed Loop Control.
+### Week 9-10: Open Loop/Closed Loop Control.
 This week will introduce some basics of open-loop and closed-loop control for mobile robotics.
 
 #### Session 1:
