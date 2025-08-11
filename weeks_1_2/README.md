@@ -11,7 +11,8 @@
 </picture>
 
 ---
-# MR3001B Design and Development of Robots I
+---
+# MR3001C Cyber-Physical Systems I
 
   ## Session
   * In this session, we introduce Manchester Robotics Ltd.
