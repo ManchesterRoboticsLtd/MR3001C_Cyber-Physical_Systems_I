@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--Initialise motor dynamical simulation-->
+    <node pkg="motor_sim" type="motor_sim.py" name="motor_Sim" >
+        <param name = "motor_sampleTime" value = "0.01" />
+        <param name = "motor_simRate" value = "200" />
+        <param name = "motor_R" value = "6.0" />
+        <param name = "motor_L" value = "0.3" />
+        <param name = "motor_k1" value = "0.04" />
+        <param name = "motor_k2" value = "0.04" />
+        <param name = "motor_J" value = "0.00008" />
+        <param name = "motor_b" value = "0.00025" />
+        <param name = "motor_m" value = "0.00" />
+    </node>
+
+    <!--Initialise motor input  (Uncomment) -->
+    <node pkg="motor_sim" type="set_point_generator.py" name="motor_SetPoint" >
+        <param name = "setpoint_Amplitude" value = "0.5" />
+        <param name = "setpoint_Freq" value = "0.1" />
+        <param name = "setpoint_Rate" value = "200" />
+    </node>
+
+
+    <!--DO NOT CHANGE THIS PART-->
+    <!--#####################################################################-->
+    
+    <!-- Load URDF-->
+    <arg name="motor_urdf" default="$(find motor_sim)/urdf/dc_motor.urdf"/>
+
+    <!--Set URDF file as a robot_description parameter-->
+    <param name="robot_description" command="cat $(arg motor_urdf)" />
+
+    <!--Initialise robot_state_publisher-->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="motor_urdf_pub" >
+    </node>
+
+    <!--Initialise motor joint publisher-->
+    <node pkg="motor_sim" type="motor_JointPub.py" name="motor_JointPub" />
+
+    <!--Initialise RVIZ Visualiser -->
+    <arg name="rvizconfig" default="$(find motor_sim)/rviz/motor.rviz" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+    <!--Initialise rqt_plot Visualiser -->
+    <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot" output="screen"  args="/motor_input /motor_output /set_point"/>
+
+    <!--#####################################################################-->
+
+</launch>
