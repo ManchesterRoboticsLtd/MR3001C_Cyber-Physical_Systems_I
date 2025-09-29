@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!--Open Loop Control-->
+    <node name="opneLoop_ctrl" pkg="robot_control" type="open_loop_ctrl.py" output="screen">
+    </node>
+
+</launch>
